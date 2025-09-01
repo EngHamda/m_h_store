@@ -8,6 +8,6 @@ COPY ./addons_mohamed_hamda /mnt/extra-addons
 COPY ./config/odoo.conf /etc/odoo/odoo.conf
 
 # Make sure odoo user owns the addons
-RUN chown -R odoo:odoo /mnt/extra-addons
+# RUN chown -R odoo:odoo /mnt/extra-addons
 
 USER odoo
