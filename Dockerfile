@@ -12,9 +12,12 @@ COPY ./config/odoo.conf /etc/odoo/odoo.conf
 
 USER odoo
 
-CMD ["odoo", "--db_host=dpg-d2rjjn24d50c73c0m2d0-a.frankfurt-postgres.render.com",
+CMD ["odoo", 
+     "--db_host=dpg-d2rjjn24d50c73c0m2d0-a.frankfurt-postgres.render.com",
      "--db_port=5432",
      "--db_user=odoo",
      "--db_password=KlB2j5mfEM7z04g3P4vEJw7DRLOZRPQ5",
      "--db_sslmode=require",
-     "--dbfilter=.*"]
+     "-d", "mohamed_hamda_db_3m83",
+     "-i", "base"
+]
