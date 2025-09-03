@@ -10,6 +10,6 @@ COPY ./config/odoo.conf /etc/odoo/odoo.conf
 # Make sure odoo user owns the addons
 # RUN chown -R odoo:odoo /mnt/extra-addons
 
-USER odoo
+# USER odoo
 
-CMD ["odoo", "-d", "mohamed_hamda_db_3m83", "-i", "base", "--db_host=dpg-d2rjjn24d50c73c0m2d0-a.frankfurt-postgres.render.com", "--db_port=5432", "--db_user=odoo", "--db_password=KlB2j5mfEM7z04g3P4vEJw7DRLOZRPQ5", "--db_sslmode=require", "--db-filter=.*"]
+# CMD ["odoo", "-d", "mohamed_hamda_db_3m83", "-i", "base", "--db_host=dpg-d2rjjn24d50c73c0m2d0-a.frankfurt-postgres.render.com", "--db_port=5432", "--db_user=odoo", "--db_password=KlB2j5mfEM7z04g3P4vEJw7DRLOZRPQ5", "--db_sslmode=require", "--db-filter=.*"]
