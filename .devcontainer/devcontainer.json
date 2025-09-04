@@ -1,0 +1,8 @@
+{
+  "name": "Odoo Dev",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "odoo",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8069],
+  "postCreateCommand": "pip install -r requirements.txt || true"
+}
